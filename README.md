@@ -181,26 +181,3 @@ Threshold coefficient for boundary detection. Higher values result in fewer segm
 - **Higher values (1.2-1.5)**: Fewer segments (only strong boundaries)
 
 **Tip**: Start with default values (10, 1.0) and adjust based on results.
-
-## Troubleshooting
-
-### "OPENAI_API_KEY not found"
-Make sure you've created a `.env` file with your OpenAI API key:
-```bash
-echo "OPENAI_API_KEY=your-key-here" > .env
-```
-
-### "Missing required columns"
-Ensure your CSV has `utterance_id` and `utterance_text` columns with the exact spelling.
-
-### Too many/few segments
-Tune the parameters when prompted:
-- **Too many segments**: Increase `std_coeff` or `window`
-- **Too few segments**: Decrease `std_coeff` or `window`
-
-### Memory issues with large transcripts
-For very large transcripts (>1000 utterances), consider:
-- Processing in smaller batches
-- Using a smaller embedding model
-- Reducing the window size parameter
-
