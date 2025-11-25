@@ -167,16 +167,16 @@ Original algorithm reference: https://github.com/logological/C99
 
 ## Parameter Tuning
 
-### window (default: 10)
+### window (default: 6)
 Window size for local similarity ranking. Larger values create smoother similarity matrices but may miss fine-grained boundaries.
 
-- **Smaller values (5-8)**: More sensitive to local changes, may create more segments
-- **Larger values (12-15)**: Considers broader context, may create fewer segments
+- **Smaller values**: More sensitive to local changes, may create more segments
+- **Larger values**: Considers broader context, may create fewer segments
 
-### std_coeff (default: 1.0)
+### std_coeff (default: 1.2)
 Threshold coefficient for boundary detection. Higher values result in fewer segments (only strongest boundaries), lower values result in more segments.
 
-- **Lower values (0.5-0.8)**: More segments (detects weaker boundaries)
-- **Higher values (1.2-1.5)**: Fewer segments (only strong boundaries)
+- **Lower values**: More segments (detects weaker boundaries)
+- **Higher values**: Fewer segments (only strong boundaries)
 
-**Tip**: Start with default values (10, 1.0) and adjust based on results.
+**Tip**: Start with default values (6, 1.2) and adjust based on results.
