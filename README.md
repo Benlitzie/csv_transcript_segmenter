@@ -6,7 +6,6 @@ A Python implementation of the C99 algorithm for automatic text segmentation. Th
 
 - **Automatic Topic Segmentation**: Uses the C99 algorithm to detect topic boundaries in transcripts
 - **Semantic Embeddings**: Leverages OpenAI's text embedding models for deep semantic understanding
-- **Production Ready**: Clean API, comprehensive error handling, and detailed logging
 - **Flexible Output**: Saves results in both JSON and CSV formats with metadata
 - **CLI Interface**: Simple command-line interface with customizable parameters
 
